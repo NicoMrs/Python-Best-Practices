@@ -1,3 +1,7 @@
 # Python-Best-Practices
 
-In this repository, I have listed some of the best Python practices for efficient programming. This repository is largely based on the excellent book *Effective Python: 90 Specific Ways to Write Better Python* by Brett Slatkin. I have remastered and post my own solutions to some of the practices discussed in the book.
+In this repository, I have listed some of Python's best practices and some tips that I have found interesting when coming across my readings. 
+This repo is based on:
+ - Fluent Python: Clear, Concise and Effective Programming by Luciano Ramalho
+ - Python CookBook by David Beazly & Brian K. Jones
+ - Effective Python 90 Specific Ways to Write Better Python, by Brett Slatkin

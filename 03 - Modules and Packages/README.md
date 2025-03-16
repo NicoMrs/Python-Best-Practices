@@ -85,9 +85,9 @@ the command `python setup.py sdist`. It will create `app.tar.gz` file.
 
 ### install distribution file
 The command `pip install`can be run on the distribution file. It will install the package
-in the site-package folder of the python environment
+in the site-package folder of the python environment. See `.myappvenv\Lib\site-packages`
 
-The command `python setup.py install`
+The command `python setup.py install`can alternatively be run.
 
 ### 3. Creating a virtual environment
 Open a terminal and run the command `python -m venv .myappvenv`, then run 

@@ -5,3 +5,4 @@ Below are some interesting resources:
  - *Fluent Python: Clear, Concise and Effective Programming* by Luciano Ramalho
  - *Python CookBook* by David Beazly & Brian K. Jones
  - *Effective Python 90 Specific Ways to Write Better Python*, by Brett Slatkin
+ - *Python Distilled*, by David Beazly

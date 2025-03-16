@@ -1,7 +1,6 @@
 # Overview
 
-In this project we will show how to organize a package namespace and 
-deploy it.
+This project shows how to organize a package namespace and deploy it.
 
 The app-project have the following architecture (cmd : `tree /f`)
 
@@ -34,13 +33,13 @@ is made
   
 ### a. Organize package namespace
 The package namespace can be managed through the `__init__.py`. When 
-an import statement is made, python execute automatically every 
+an import statement is made, python automatically executes every 
 `__init__.py` of every package. So it is a good place to define import rules.
 
 
 ### relative import
 It is more robust to use relative imports through the package when refactoring is
-needed. Indeed, fully qualified path need to be rename when a module or package name
+needed. Indeed, fully qualified paths need to be rename when a module or package name
 is changed.
 
 ```py
@@ -81,4 +80,30 @@ If a `__main__.py` is defined in model it is also possible to run the command
 ## 2. Deploying a package
 
 ### create distribution file
+The simples way to create a distribution file is create a setup file and then run 
+the command `python setup.py sdist`. It will create `app.tar.gz` file.
+
 ### install distribution file
+The command `pip install`can be run on the distribution file. It will install the package
+in the site-package folder of the python environment
+
+The command `python setup.py install`
+
+### 3. Creating a virtual environment
+Open a terminal and run the command `python -m venv .myappvenv`, then run 
+`.\.myappvenv\Scripts\activate`, then install the app
+
+Then install, the package and you can start using it.
+
+```
+PS C:\Users\Nico\GitRepos\Python-Best-Practices\03 - Modules and Packages> .\.myappvenv\Scripts\activate  
+(.myappvenv) PS C:\Users\Nico\GitRepos\Python-Best-Practices\03 - Modules and Packages> py
+Python 3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import app                                                        
+>>> app.Model()
+Base Model                                          
+Standard Model                                      
+<app.model.model.Model object at 0x000001B503B6CC50>
+>>> 
+```                  
